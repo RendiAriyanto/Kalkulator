@@ -1,7 +1,13 @@
+const calculatorScreen = document.querySelector(`calculator-screen`);
+
+const updateScreen = (number) =>{
+    calculatorScreen.value = number;
+}
+
 const numbers = document.querySelectorAll(".number");
 
     numbers.forEach((number) => {
-    numbers.addEventListener("click", ()=>{
-        console.log("tombol di klik");
+    numbers.addEventListener("click", (event)=>{
+        console.log(event.target.value);
     });
 });
