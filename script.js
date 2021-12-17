@@ -1,7 +1,7 @@
-const numbers = document.querySelectorAll(".number")
+const numbers = document.querySelectorAll(".number");
 
     numbers.forEach((number) => {
     numbers.addEventListener("click", ()=>{
-        console.log("event.target.value")
-    })
-})
+        console.log("tombol di klik");
+    });
+});
